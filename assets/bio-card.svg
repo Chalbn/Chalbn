@@ -1,0 +1,15 @@
+<svg width="850" height="210" viewBox="0 0 850 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="850" height="210" rx="14" fill="#111C18" stroke="#2B493E" stroke-width="1.5" />
+  
+  <path d="M0 14C0 6.26801 6.26801 0 14 0H836C843.732 0 850 6.26801 850 14V38H0V14Z" fill="#182822" />
+  <rect x="20" y="8" width="135" height="30" rx="6" fill="#111C18" />
+  <circle cx="36" cy="23" r="4" fill="#74C69D" />
+  <text x="48" y="27" fill="#D8F3DC" font-family="Consolas, monospace" font-size="12">chalbn.config.json</text>
+
+  <text x="30" y="68" fill="#74C69D" font-family="Consolas, monospace" font-size="14">{</text>
+  <text x="50" y="92" fill="#95D5B2" font-family="Consolas, monospace" font-size="14">"username": <tspan fill="#E8F5E9">"Chalbn"</tspan>,</text>
+  <text x="50" y="116" fill="#95D5B2" font-family="Consolas, monospace" font-size="14">"stack": <tspan fill="#E8F5E9">["PHP", "Laravel", "MySQL", "Python"]</tspan>,</text>
+  <text x="50" y="140" fill="#95D5B2" font-family="Consolas, monospace" font-size="14">"interests": <tspan fill="#E8F5E9">["Backend Architecture", "Database Routines", "Knowledge Graphs"]</tspan>,</text>
+  <text x="50" y="164" fill="#95D5B2" font-family="Consolas, monospace" font-size="14">"status": <tspan fill="#B7E4C7">"Building clean & structured web applications"</tspan></text>
+  <text x="30" y="188" fill="#74C69D" font-family="Consolas, monospace" font-size="14">}</text>
+</svg>
