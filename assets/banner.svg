@@ -1,41 +1,30 @@
-<svg width="850" height="220" viewBox="0 0 850 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="850" y2="220" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#13221D" />
-      <stop offset="100%" stop-color="#223D34" />
-    </linearGradient>
-    <linearGradient id="accentGrad" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#74C69D" />
-      <stop offset="100%" stop-color="#B7E4C7" />
-    </linearGradient>
-  </defs>
+<svg width="850" height="220" viewBox="0 0 850 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="850" height="220" rx="16" fill="#162923" stroke="#2D4F43" stroke-width="2" />
 
-  <rect width="850" height="220" rx="16" fill="url(#bgGrad)" stroke="#2D4F43" stroke-width="1.5" />
+  <path d="M560 220 C620 130 710 155 850 50 L850 220 Z" fill="#234238" />
+  <path d="M630 220 C695 160 765 180 850 105 L850 220 Z" fill="#325E4F" />
 
-  <path d="M580 220C630 140 720 160 850 60V220H580Z" fill="#2D5A4B" fill-opacity="0.35" />
-  <path d="M640 220C700 165 770 185 850 110V220H640Z" fill="#52B788" fill-opacity="0.25" />
+  <rect x="45" y="42" width="75" height="5" rx="2.5" fill="#74C69D" />
 
-  <rect x="45" y="42" width="70" height="5" rx="2.5" fill="url(#accentGrad)" />
-
-  <text x="45" y="88" fill="#E8F5E9" font-family="Segoe UI, Ubuntu, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="1.5">
+  <text x="45" y="88" fill="#E8F5E9" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="bold" letter-spacing="1">
     VASCHA O. LUMBANTORUAN
   </text>
   <text x="45" y="118" fill="#95D5B2" font-family="Consolas, monospace" font-size="16">
     @Chalbn | Full-Stack Web & Database Developer
   </text>
 
-  <rect x="45" y="145" width="150" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.2" />
-  <text x="120" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+  <rect x="45" y="145" width="150" height="32" rx="16" fill="#1E382F" stroke="#74C69D" stroke-width="1.5" />
+  <text x="120" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">
     Laravel & PHP
   </text>
 
-  <rect x="207" y="145" width="150" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.2" />
-  <text x="282" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+  <rect x="207" y="145" width="150" height="32" rx="16" fill="#1E382F" stroke="#74C69D" stroke-width="1.5" />
+  <text x="282" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">
     MySQL Systems
   </text>
 
-  <rect x="369" y="145" width="155" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.2" />
-  <text x="446" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+  <rect x="369" y="145" width="155" height="32" rx="16" fill="#1E382F" stroke="#74C69D" stroke-width="1.5" />
+  <text x="446" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">
     Semantic Web
   </text>
 </svg>
