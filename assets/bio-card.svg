@@ -8,6 +8,6 @@
   <text x="50" y="92" fill="#E8F5E9" font-family="monospace" font-size="14">"username": "Chalbn",</text>
   <text x="50" y="116" fill="#E8F5E9" font-family="monospace" font-size="14">"stack": ["PHP", "Laravel", "MySQL", "Python"],</text>
   <text x="50" y="140" fill="#E8F5E9" font-family="monospace" font-size="14">"interests": ["Backend Architecture", "Database Routines", "Knowledge Graphs"],</text>
-  <text x="50" y="164" fill="#B7E4C7" font-family="monospace" font-size="14">"status": "Building clean & structured web applications"</text>
+  <text x="50" y="164" fill="#B7E4C7" font-family="monospace" font-size="14">"status": "Building clean &amp; structured web applications"</text>
   <text x="30" y="188" fill="#74C69D" font-family="monospace" font-size="14">}</text>
 </svg>

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Chalbn Profile Banner" width="100%" />
+  <img src="./assets/banner.svg?v=2" alt="Chalbn Profile Banner" width="100%" />
 </div>
 
 <br/>
@@ -13,7 +13,7 @@
 <br/>
 
 <div align="center">
-  <img src="./assets/bio-card.svg" alt="Chalbn Config" width="100%" />
+  <img src="./assets/bio-card.svg?v=2" alt="Chalbn Config" width="100%" />
 </div>
 
 <br/>
@@ -29,7 +29,6 @@
 
 <br/>
 
-### 📊 GitHub Stats
+### 📊 Contribution Streak
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Chalbn&show_icons=true&bg_color=13221D&title_color=74C69D&text_color=E8F5E9&icon_color=95D5B2&border_color=2D4F43&border_radius=12" alt="Chalbn GitHub Stats" />
-</p>
+  <img src="
