@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg?v=6" alt="Chalbn Profile Banner" width="100%" />
+  <img src="./assets/banner.svg?v=7" alt="Chalbn Profile Banner" width="100%" />
 </div>
 
 <br/>
@@ -23,25 +23,25 @@
 <br/>
 
 <div align="center">
-  <img src="./assets/bio-card.svg?v=6" alt="Chalbn Config & Metrics" width="100%" />
+  <img src="./assets/bio-card.svg?v=7" alt="Chalbn Config & Metrics" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=7" width="100%" />
 </div>
 
 ### 🚀 Featured Projects & Research
 
 <div align="center">
-  <img src="./assets/projects.svg?v=6" alt="Featured Projects" width="100%" />
+  <img src="./assets/projects.svg?v=7" alt="Featured Projects" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=7" width="100%" />
 </div>
 
 ### 🛠️ Tech Stack & Development Tools
@@ -73,7 +73,7 @@
 <br/>
 
 <div align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=7" width="100%" />
 </div>
 
 ### 📊 Contribution & Activity
