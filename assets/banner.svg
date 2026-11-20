@@ -1,45 +1,112 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="850" height="235" viewBox="0 0 850 235">
+  <style>
+    @keyframes spinCW {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spinCCW {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @keyframes floatUp1 {
+      0% { transform: translateY(0px); opacity: 0; }
+      30% { opacity: 0.9; }
+      70% { opacity: 0.9; }
+      100% { transform: translateY(-135px); opacity: 0; }
+    }
+    @keyframes floatUp2 {
+      0% { transform: translateY(0px); opacity: 0; }
+      25% { opacity: 0.85; }
+      75% { opacity: 0.85; }
+      100% { transform: translateY(-155px); opacity: 0; }
+    }
+    @keyframes floatUp3 {
+      0% { transform: translateY(0px); opacity: 0; }
+      35% { opacity: 1; }
+      65% { opacity: 1; }
+      100% { transform: translateY(-120px); opacity: 0; }
+    }
+    @keyframes radarPulse {
+      0% { r: 42px; opacity: 0.75; }
+      100% { r: 92px; opacity: 0; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.55; }
+      50% { opacity: 1; }
+    }
+    .dot-1 { animation: floatUp1 7.5s ease-in-out infinite; }
+    .dot-2 { animation: floatUp2 9.5s ease-in-out infinite 1.2s; }
+    .dot-3 { animation: floatUp3 6.8s ease-in-out infinite 2.4s; }
+    .dot-4 { animation: floatUp1 8.5s ease-in-out infinite 3.1s; }
+    .dot-5 { animation: floatUp2 10.5s ease-in-out infinite 0.7s; }
+    .dot-6 { animation: floatUp3 7.2s ease-in-out infinite 1.9s; }
+    .radar-ring { animation: radarPulse 3.2s ease-out infinite; }
+    .orbit-ring { transform-origin: 735px 122px; animation: spinCCW 25s linear infinite; }
+    .hex-outer { transform-origin: 735px 122px; animation: spinCW 13s linear infinite; }
+    .hex-mid { transform-origin: 735px 122px; animation: spinCCW 8.5s linear infinite; }
+    .hex-inner { transform-origin: 735px 122px; animation: spinCW 5.5s linear infinite; }
+    .code-pulse { animation: pulseGlow 2.2s ease-in-out infinite; }
+  </style>
+
+  <!-- Card Background & Grid Halus -->
   <rect width="850" height="235" rx="16" fill="#12211C" stroke="#2D4F43" stroke-width="2" />
   <path d="M0 47 H850 M0 94 H850 M0 141 H850 M0 188 H850 M170 0 V235 M340 0 V235 M510 0 V235 M680 0 V235" stroke="#1C332B" stroke-width="1" />
+
+  <!-- Gelombang Lapis 3 di Kanan -->
   <path d="M490 235 C565 115 685 145 850 20 L850 235 Z" fill="#1B352C" />
   <path d="M575 235 C640 140 730 165 850 70 L850 235 Z" fill="#25483C" />
   <path d="M645 235 C705 170 775 185 850 120 L850 235 Z" fill="#326152" />
-  <circle cx="735" cy="122" r="45" fill="none" stroke="#74C69D" stroke-width="1.5">
-    <animate attributeName="r" values="42;92" dur="3.2s" repeatCount="indefinite" />
-    <animate attributeName="opacity" values="0.7;0" dur="3.2s" repeatCount="indefinite" />
-  </circle>
-  <circle cx="735" cy="122" r="85" fill="none" stroke="#2D4F43" stroke-width="1.2" stroke-dasharray="4 6">
-    <animateTransform attributeName="transform" type="rotate" from="360 735 122" to="0 735 122" dur="25s" repeatCount="indefinite" />
-  </circle>
-  <polygon points="735,49 798,85.5 798,158.5 735,195 672,158.5 672,85.5" fill="#101D18" stroke="#74C69D" stroke-width="2.2" stroke-dasharray="24 8 6 8">
-    <animateTransform attributeName="transform" type="rotate" from="0 735 122" to="360 735 122" dur="13s" repeatCount="indefinite" />
-  </polygon>
-  <polygon points="735,63 786,92.5 786,151.5 735,181 684,151.5 684,92.5" fill="none" stroke="#52B788" stroke-width="1.6" stroke-dasharray="10 6">
-    <animateTransform attributeName="transform" type="rotate" from="360 735 122" to="0 735 122" dur="8.5s" repeatCount="indefinite" />
-  </polygon>
-  <polygon points="735,77 774,99.5 774,144.5 735,167 696,144.5 696,99.5" fill="none" stroke="#95D5B2" stroke-width="1.2" stroke-dasharray="4 4">
-    <animateTransform attributeName="transform" type="rotate" from="0 735 122" to="360 735 122" dur="5.5s" repeatCount="indefinite" />
-  </polygon>
-  <text x="735" y="130" fill="#D8F3DC" font-family="monospace" font-size="25" font-weight="bold" text-anchor="middle">
-    &lt;/&gt;
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite" />
-  </text>
+
+  <!-- Titik-Titik Melayang Bergerak di Belakang -->
+  <circle class="dot-1" cx="465" cy="195" r="2.8" fill="#74C69D" />
+  <circle class="dot-2" cx="515" cy="205" r="3.2" fill="#B7E4C7" />
+  <circle class="dot-3" cx="560" cy="190" r="2.5" fill="#52B788" />
+  <circle class="dot-4" cx="605" cy="200" r="3.5" fill="#95D5B2" />
+  <circle class="dot-5" cx="650" cy="210" r="2.6" fill="#74C69D" />
+  <circle class="dot-6" cx="815" cy="195" r="3" fill="#B7E4C7" />
+
+  <!-- Radar Pulse Ring & Orbit Lingkaran Luar -->
+  <circle class="radar-ring" cx="735" cy="122" r="42" fill="none" stroke="#74C69D" stroke-width="1.5" />
+  <circle class="orbit-ring" cx="735" cy="122" r="85" fill="none" stroke="#2D4F43" stroke-width="1.2" stroke-dasharray="4 6" />
+
+  <!-- 3 Lapis Hexagon Berputar -->
+  <polygon class="hex-outer" points="735,49 798,85.5 798,158.5 735,195 672,158.5 672,85.5" fill="#101D18" stroke="#74C69D" stroke-width="2.2" stroke-dasharray="24 8 6 8" />
+  <polygon class="hex-mid" points="735,63 786,92.5 786,151.5 735,181 684,151.5 684,92.5" fill="none" stroke="#52B788" stroke-width="1.6" stroke-dasharray="10 6" />
+  <polygon class="hex-inner" points="735,77 774,99.5 774,144.5 735,167 696,144.5 696,99.5" fill="none" stroke="#95D5B2" stroke-width="1.2" stroke-dasharray="4 4" />
+
+  <!-- Ikon Kode di Tengah -->
+  <text class="code-pulse" x="735" y="130" fill="#D8F3DC" font-family="monospace" font-size="25" font-weight="bold" text-anchor="middle"></></text>
+
+  <!-- Garis Aksen Kiri Atas -->
   <rect x="42" y="38" width="95" height="5" rx="2.5" fill="#74C69D" />
-  <circle cx="149" cy="40.5" r="3.5" fill="#B7E4C7">
-    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite" />
-  </circle>
+  <circle class="code-pulse" cx="149" cy="40.5" r="3.8" fill="#B7E4C7" />
+
+  <!-- Nama & Subtitle -->
   <text x="42" y="84" fill="#E8F5E9" font-family="Segoe UI, Arial, sans-serif" font-size="31" font-weight="bold" letter-spacing="1">
     VASCHA U. LUMBANTORUAN
   </text>
   <text x="42" y="114" fill="#95D5B2" font-family="Consolas, monospace" font-size="15">
     @Chalbn | Full-Stack Web Developer &amp; Database Enthusiast
   </text>
+
+  <!-- 4 Pill Badges -->
   <rect x="42" y="144" width="135" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.4" />
-  <text x="109.5" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">Laravel &amp; PHP</text>
+  <text x="109.5" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">
+    Laravel &amp; PHP
+  </text>
+
   <rect x="187" y="144" width="140" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.4" />
-  <text x="257" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">MySQL Systems</text>
+  <text x="257" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">
+    MySQL Systems
+  </text>
+
   <rect x="337" y="144" width="135" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.4" />
-  <text x="404.5" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">Semantic Web</text>
+  <text x="404.5" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">
+    Semantic Web
+  </text>
+
   <rect x="482" y="144" width="130" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.4" />
-  <text x="547" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">Python &amp; RDF</text>
+  <text x="547" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">
+    Python &amp; RDF
+  </text>
 </svg>
