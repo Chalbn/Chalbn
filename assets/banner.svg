@@ -21,7 +21,7 @@
     <animateTransform attributeName="transform" type="rotate" from="0 735 122" to="360 735 122" dur="5.5s" repeatCount="indefinite" />
   </polygon>
   <text x="735" y="130" fill="#D8F3DC" font-family="monospace" font-size="25" font-weight="bold" text-anchor="middle">
-    </>
+    &lt;/&gt;
     <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite" />
   </text>
   <rect x="42" y="38" width="95" height="5" rx="2.5" fill="#74C69D" />
