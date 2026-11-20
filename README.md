@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg?v=8" alt="Chalbn Profile Banner" width="100%" />
+  <img src="./assets/banner.svg?v=12" alt="Chalbn Profile Banner" width="100%" />
 </div>
 
 <br/>

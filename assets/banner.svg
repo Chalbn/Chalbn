@@ -8,39 +8,28 @@
       from { transform: rotate(360deg); }
       to { transform: rotate(0deg); }
     }
-    @keyframes floatUp1 {
-      0% { transform: translateY(0px); opacity: 0; }
-      30% { opacity: 0.9; }
-      70% { opacity: 0.9; }
-      100% { transform: translateY(-135px); opacity: 0; }
+    @keyframes floatRight1 {
+      0%, 100% { transform: translateY(0px); opacity: 0.85; }
+      50% { transform: translateY(-95px); opacity: 0.25; }
     }
-    @keyframes floatUp2 {
-      0% { transform: translateY(0px); opacity: 0; }
-      25% { opacity: 0.85; }
-      75% { opacity: 0.85; }
-      100% { transform: translateY(-155px); opacity: 0; }
+    @keyframes floatRight2 {
+      0%, 100% { transform: translateY(-20px); opacity: 0.35; }
+      50% { transform: translateY(-115px); opacity: 0.95; }
     }
-    @keyframes floatUp3 {
-      0% { transform: translateY(0px); opacity: 0; }
-      35% { opacity: 1; }
-      65% { opacity: 1; }
-      100% { transform: translateY(-120px); opacity: 0; }
-    }
-    @keyframes radarPulse {
-      0% { r: 42px; opacity: 0.75; }
-      100% { r: 92px; opacity: 0; }
+    @keyframes floatRight3 {
+      0%, 100% { transform: translateY(0px); opacity: 0.9; }
+      50% { transform: translateY(-85px); opacity: 0.3; }
     }
     @keyframes pulseGlow {
       0%, 100% { opacity: 0.55; }
       50% { opacity: 1; }
     }
-    .dot-1 { animation: floatUp1 7.5s ease-in-out infinite; }
-    .dot-2 { animation: floatUp2 9.5s ease-in-out infinite 1.2s; }
-    .dot-3 { animation: floatUp3 6.8s ease-in-out infinite 2.4s; }
-    .dot-4 { animation: floatUp1 8.5s ease-in-out infinite 3.1s; }
-    .dot-5 { animation: floatUp2 10.5s ease-in-out infinite 0.7s; }
-    .dot-6 { animation: floatUp3 7.2s ease-in-out infinite 1.9s; }
-    .radar-ring { animation: radarPulse 3.2s ease-out infinite; }
+    .dot-1 { animation: floatRight1 6.5s ease-in-out infinite; }
+    .dot-2 { animation: floatRight2 8s ease-in-out infinite; }
+    .dot-3 { animation: floatRight3 5.8s ease-in-out infinite; }
+    .dot-4 { animation: floatRight1 7.2s ease-in-out infinite 1.5s; }
+    .dot-5 { animation: floatRight2 8.5s ease-in-out infinite 0.8s; }
+    .dot-6 { animation: floatRight3 6.2s ease-in-out infinite 1.2s; }
     .orbit-ring { transform-origin: 735px 122px; animation: spinCCW 25s linear infinite; }
     .hex-outer { transform-origin: 735px 122px; animation: spinCW 13s linear infinite; }
     .hex-mid { transform-origin: 735px 122px; animation: spinCCW 8.5s linear infinite; }
@@ -57,16 +46,15 @@
   <path d="M575 235 C640 140 730 165 850 70 L850 235 Z" fill="#25483C" />
   <path d="M645 235 C705 170 775 185 850 120 L850 235 Z" fill="#326152" />
 
-  <!-- Titik-Titik Melayang Bergerak di Belakang -->
-  <circle class="dot-1" cx="465" cy="195" r="2.8" fill="#74C69D" />
-  <circle class="dot-2" cx="515" cy="205" r="3.2" fill="#B7E4C7" />
-  <circle class="dot-3" cx="560" cy="190" r="2.5" fill="#52B788" />
-  <circle class="dot-4" cx="605" cy="200" r="3.5" fill="#95D5B2" />
-  <circle class="dot-5" cx="650" cy="210" r="2.6" fill="#74C69D" />
-  <circle class="dot-6" cx="815" cy="195" r="3" fill="#B7E4C7" />
+  <!-- Titik-Titik Melayang Bergerak di Area Kanan Saja -->
+  <circle class="dot-1" cx="465" cy="185" r="3" fill="#74C69D" />
+  <circle class="dot-2" cx="515" cy="195" r="3.4" fill="#B7E4C7" />
+  <circle class="dot-3" cx="560" cy="175" r="2.8" fill="#52B788" />
+  <circle class="dot-4" cx="605" cy="190" r="3.5" fill="#95D5B2" />
+  <circle class="dot-5" cx="650" cy="200" r="3" fill="#74C69D" />
+  <circle class="dot-6" cx="815" cy="185" r="3.2" fill="#B7E4C7" />
 
-  <!-- Radar Pulse Ring & Orbit Lingkaran Luar -->
-  <circle class="radar-ring" cx="735" cy="122" r="42" fill="none" stroke="#74C69D" stroke-width="1.5" />
+  <!-- Orbit Lingkaran Luar -->
   <circle class="orbit-ring" cx="735" cy="122" r="85" fill="none" stroke="#2D4F43" stroke-width="1.2" stroke-dasharray="4 6" />
 
   <!-- 3 Lapis Hexagon Berputar -->
@@ -75,7 +63,7 @@
   <polygon class="hex-inner" points="735,77 774,99.5 774,144.5 735,167 696,144.5 696,99.5" fill="none" stroke="#95D5B2" stroke-width="1.2" stroke-dasharray="4 4" />
 
   <!-- Ikon Kode di Tengah -->
-  <text class="code-pulse" x="735" y="130" fill="#D8F3DC" font-family="monospace" font-size="25" font-weight="bold" text-anchor="middle"></></text>
+  <text class="code-pulse" x="735" y="130" fill="#D8F3DC" font-family="monospace" font-size="25" font-weight="bold" text-anchor="middle">&lt;/&gt;</text>
 
   <!-- Garis Aksen Kiri Atas -->
   <rect x="42" y="38" width="95" height="5" rx="2.5" fill="#74C69D" />
