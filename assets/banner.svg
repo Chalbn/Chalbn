@@ -1,30 +1,92 @@
-<svg width="850" height="220" viewBox="0 0 850 220" xmlns="http://www.w3.org/2000/svg">
-  <rect width="850" height="220" rx="16" fill="#162923" stroke="#2D4F43" stroke-width="2" />
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="235" viewBox="0 0 850 235">
+  <rect width="850" height="235" rx="16" fill="#12211C" stroke="#2D4F43" stroke-width="2" />
 
-  <path d="M560 220 C620 130 710 155 850 50 L850 220 Z" fill="#234238" />
-  <path d="M630 220 C695 160 765 180 850 105 L850 220 Z" fill="#325E4F" />
+  <!-- Grid Halus di Latar Belakang -->
+  <path d="M0 47 H850 M0 94 H850 M0 141 H850 M0 188 H850 M170 0 V235 M340 0 V235 M510 0 V235 M680 0 V235" stroke="#1C332B" stroke-width="1" />
 
-  <rect x="45" y="42" width="75" height="5" rx="2.5" fill="#74C69D" />
+  <!-- Gelombang Lapis 3 di Kanan -->
+  <path d="M490 235 C565 115 685 145 850 20 L850 235 Z" fill="#1B352C" />
+  <path d="M575 235 C640 140 730 165 850 70 L850 235 Z" fill="#25483C" />
+  <path d="M645 235 C705 170 775 185 850 120 L850 235 Z" fill="#326152" />
 
-  <text x="45" y="88" fill="#E8F5E9" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="bold" letter-spacing="1">
+  <!-- Partikel Melayang Vertikal -->
+  <circle cx="515" cy="180" r="3" fill="#74C69D" fill-opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-130; 0,0" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0.9;0" dur="8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="565" cy="195" r="2.5" fill="#B7E4C7" fill-opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-150; 0,0" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0.8;0" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="615" cy="170" r="3.5" fill="#52B788" fill-opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-120; 0,0" dur="7s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Radar Pulse Ring di Kanan -->
+  <circle cx="735" cy="122" r="45" fill="none" stroke="#74C69D" stroke-width="1.5">
+    <animate attributeName="r" values="42;92" dur="3.2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.7;0" dur="3.2s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Orbit Lingkaran Luar -->
+  <circle cx="735" cy="122" r="85" fill="none" stroke="#2D4F43" stroke-width="1.2" stroke-dasharray="4 6">
+    <animateTransform attributeName="transform" type="rotate" from="360 735 122" to="0 735 122" dur="25s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Hexagon Lapis 1 (Luar - Searah Jarum Jam) -->
+  <polygon points="735,49 798,85.5 798,158.5 735,195 672,158.5 672,85.5" fill="#101D18" stroke="#74C69D" stroke-width="2.2" stroke-dasharray="24 8 6 8">
+    <animateTransform attributeName="transform" type="rotate" from="0 735 122" to="360 735 122" dur="13s" repeatCount="indefinite" />
+  </polygon>
+
+  <!-- Hexagon Lapis 2 (Tengah - Berlawanan Jarum Jam) -->
+  <polygon points="735,63 786,92.5 786,151.5 735,181 684,151.5 684,92.5" fill="none" stroke="#52B788" stroke-width="1.6" stroke-dasharray="10 6">
+    <animateTransform attributeName="transform" type="rotate" from="360 735 122" to="0 735 122" dur="8.5s" repeatCount="indefinite" />
+  </polygon>
+
+  <!-- Hexagon Lapis 3 (Dalam - Searah Jarum Jam Cepat) -->
+  <polygon points="735,77 774,99.5 774,144.5 735,167 696,144.5 696,99.5" fill="none" stroke="#95D5B2" stroke-width="1.2" stroke-dasharray="4 4">
+    <animateTransform attributeName="transform" type="rotate" from="0 735 122" to="360 735 122" dur="5.5s" repeatCount="indefinite" />
+  </polygon>
+
+  <!-- Ikon Kode dengan Efek Breathing -->
+  <text x="735" y="130" fill="#D8F3DC" font-family="monospace" font-size="25" font-weight="bold" text-anchor="middle">
+    </>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite" />
+  </text>
+
+  <!-- Garis Aksen Kiri Atas -->
+  <rect x="42" y="38" width="95" height="5" rx="2.5" fill="#74C69D" />
+  <circle cx="149" cy="40.5" r="3.5" fill="#B7E4C7">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Nama & Subtitle -->
+  <text x="42" y="84" fill="#E8F5E9" font-family="Segoe UI, Arial, sans-serif" font-size="31" font-weight="bold" letter-spacing="1">
     VASCHA U. LUMBANTORUAN
   </text>
-  <text x="45" y="118" fill="#95D5B2" font-family="Consolas, monospace" font-size="16">
-    @Chalbn | Full-Stack Web &amp; Database Developer
+  <text x="42" y="114" fill="#95D5B2" font-family="Consolas, monospace" font-size="15">
+    @Chalbn | Full-Stack Web Developer &amp; Database Enthusiast
   </text>
 
-  <rect x="45" y="145" width="150" height="32" rx="16" fill="#1E382F" stroke="#74C69D" stroke-width="1.5" />
-  <text x="120" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">
+  <!-- 4 Pill Badges -->
+  <rect x="42" y="144" width="135" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.4" />
+  <text x="109.5" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">
     Laravel &amp; PHP
   </text>
 
-  <rect x="207" y="145" width="150" height="32" rx="16" fill="#1E382F" stroke="#74C69D" stroke-width="1.5" />
-  <text x="282" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">
+  <rect x="187" y="144" width="140" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.4" />
+  <text x="257" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">
     MySQL Systems
   </text>
 
-  <rect x="369" y="145" width="155" height="32" rx="16" fill="#1E382F" stroke="#74C69D" stroke-width="1.5" />
-  <text x="446" y="166" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">
+  <rect x="337" y="144" width="135" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.4" />
+  <text x="404.5" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">
     Semantic Web
+  </text>
+
+  <rect x="482" y="144" width="130" height="32" rx="16" fill="#1B332B" stroke="#74C69D" stroke-width="1.4" />
+  <text x="547" y="165" fill="#D8F3DC" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">
+    Python &amp; RDF
   </text>
 </svg>
